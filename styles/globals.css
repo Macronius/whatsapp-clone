@@ -13,6 +13,8 @@ a {
 
 * {
   box-sizing: border-box;
+  outline: 0.5px dashed rgba(187, 187, 187, 0.436);
+  --clr-gray-lt: #bb8bb811;
 }
 
 @media (prefers-color-scheme: dark) {

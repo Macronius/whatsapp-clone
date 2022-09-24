@@ -20,6 +20,7 @@ a {
   --clr-yellow-mdm: #ab920844;
   --clr-yellow-mdmdrk: #554904;
   --clr-yellow-drkdrk: #2E2702;
+  color: black;
 }
 
 @media (prefers-color-scheme: dark) {

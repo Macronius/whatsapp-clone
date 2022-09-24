@@ -158,6 +158,7 @@ const SearchInput = styled.input`
   border: none;
   padding: 4px;
   /* background-color: #bb8bb811; */
+  background-color: whitesmoke;
 `;
 
 const SidebarButton = styled(Button)`

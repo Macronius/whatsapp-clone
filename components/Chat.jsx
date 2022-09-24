@@ -20,7 +20,7 @@ const Container = styled.div`
   padding: 1.25rem;
   word-break: break-word;
   margin: 0.5rem 0;
-  /* color: black; */
+  color: black;
 
   /* border-radius: 0.5rem; */
   border-top-right-radius: 1rem;

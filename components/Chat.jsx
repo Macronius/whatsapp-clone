@@ -21,8 +21,14 @@ const Container = styled.div`
   word-break: break-word;
   margin: 0.5rem 0;
 
+  /* border-radius: 0.5rem; */
+  border-top-right-radius: 1rem;
+  border-bottom-right-radius:1rem;
+  background-color: white;
+  outline: .5px solid var(--clr-gray-lt);
+
   :hover {
-    background-color: var(--clr-gray-lt);
+    background-color: var(--clr-yellow-mdm);
   }
 `;
 

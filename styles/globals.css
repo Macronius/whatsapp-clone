@@ -13,8 +13,13 @@ a {
 
 * {
   box-sizing: border-box;
-  outline: 0.5px dashed rgba(187, 187, 187, 0.436);
+  /* outline: 0.5px dashed rgba(187, 187, 187, 0.436); */
   --clr-gray-lt: #bb8bb811;
+  --clr-yellow-lt: #fdf9e3;
+  --clr-yellow-drk: #655604;
+  --clr-yellow-mdm: #ab920844;
+  --clr-yellow-mdmdrk: #554904;
+  --clr-yellow-drkdrk: #2E2702;
 }
 
 @media (prefers-color-scheme: dark) {

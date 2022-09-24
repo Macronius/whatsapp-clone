@@ -61,6 +61,7 @@ function Sidebar() {
 
   return (
     <Container>
+
       <Header>
         <UserAvatar src={user.photoURL} onClick={() => auth.signOut()} />
         <IconsContainer>
@@ -72,11 +73,15 @@ function Sidebar() {
           </IconButton>
         </IconsContainer>
       </Header>
+
       <Search>
         <SearchIcon />
         <SearchInput placeholder="Search in chats..." />
       </Search>
-      <SidebarButton onClick={createChat}>Start a new chat</SidebarButton>
+
+      <SidebarButton onClick={createChat}>
+        Start a new chat
+      </SidebarButton>
 
       {
         /* list of chats */
@@ -93,6 +98,20 @@ export default Sidebar;
 //===styled components
 const Container = styled.div`
   padding: 1.75rem;
+  background-color: #fefcf3;
+
+  flex: 0.45;
+  border-right: 1px solid whitesmoke;
+  height: 100vh;
+  min-width: 300px;
+  max-width: 350px;
+  overflow-y: scroll;
+
+  ::-webkit-scrollbar {
+    display: none;
+  }
+  -ms-overflow-style: none;  // MS IE and Edge
+  scrollbar-width: none;  //Firefox
 `;
 
 const Header = styled.div`
@@ -108,6 +127,10 @@ const Header = styled.div`
   padding: 15px;
   /* border-bottom: 1px solid #bb8bb822; */
   border-bottom: 1px solid var(--clr-gray-lt);
+
+  background-color: var(--clr-yellow-mdm);
+  /* border-radius: 1rem; */
+  border-top-left-radius: 1rem;
 `;
 
 const UserAvatar = styled(Avatar)`
@@ -126,6 +149,7 @@ const Search = styled.div`
   align-items: center;
   padding: 20px;
   border-radius: 2px;
+  font-size: 14px;
 `;
 
 const SearchInput = styled.input`
@@ -144,6 +168,12 @@ const SidebarButton = styled(Button)`
     border-top: 0.5px solid #bb8bb833;
     border-bottom: 0.5px solid #bb8bb833;
     padding: 2rem 0;
-    background-color: #bb8bb811;
+    /* background-color: #bb8bb811; */
+    background-color: #fefcf3;
+    box-shadow: 0.5px 0.5px 2px inset #888;
   }
 `;
+
+const ChatComponent = styled(Chat)`
+  background-color: orange;
+`
